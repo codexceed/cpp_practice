@@ -54,7 +54,7 @@ class lruCache{
     linkedList obj;  //linkedList obj to be referred during LRU caching
     map<int, Node*> listMap;   //map of key to node pointers to keep track of keys in cache
 public:
-
+    void setCache(int cacheSize){obj.maxSize = cacheSize;}
     //function to implement LRU caching
     void lruReferPage(int key){
         //Check if key exists in mapping table of the cache
