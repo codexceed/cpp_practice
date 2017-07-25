@@ -1,14 +1,16 @@
 #include<iostream>
+#include "linkedList.h"
 using namespace std;
 
-struct Node{
-	int data;
-	Node* next;
-};
-
 int main(){
-	Node *head;
-	if(head==NULL)cout<<"yolo";
-	else cout<<"swag";
-	return 0;
+	linkedList obj;
+	obj.showList();
+	obj.enqueue(4);
+	obj.enqueue(3);
+	obj.dequeue();
+	obj.enqueue(5);
+	obj.enqueue(3);
+	obj.showList();
+	obj.dequeue();
+	obj.showList();
 }
